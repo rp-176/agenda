@@ -1,0 +1,15 @@
+body{
+    background-color:rgba(0, 0, 0, 0.747);
+    margin: 0px;
+}
+.today{
+    background-color: beige;
+    height: 100vh;
+    width: 30%;
+}
+.today_header{
+    text-align: left; 
+    color:black;
+    margin: 0px;
+    padding: 10px;
+}
