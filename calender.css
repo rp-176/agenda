@@ -27,4 +27,36 @@ body{
     overflow-wrap: break-word;
     font-size: 20px;
 }
-
+#ctitle{
+    text-align: center;
+}
+.Monthbtn{
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 9.15vw);
+    grid-template-rows: 30px auto auto auto auto auto auto;
+    padding: 10px;
+    height: 87vh;
+    width: auto;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* font-size: 20px;
+    padding: 3px; */
+  }
+.day{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+#calender{
+    background-color: #e8e0d4;
+    position:absolute;
+    top:0;
+    left: 32vw;
+    width: 66vw;
+    height: 100vh;
+}
