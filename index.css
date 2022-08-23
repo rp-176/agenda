@@ -1,0 +1,11 @@
+body{
+    background-color: #0D1B2A;
+}
+.row-item{
+    color: #E0E1DD;
+    background-color: #1B263B;
+    min-height: 70vh;
+    border-radius: 20px;
+    vertical-align: middle;
+    
+}
