@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rp-176/agenda/issues"
   },
-  "homepage": "https://github.com/rp-176/agenda#readme"
+  "homepage": "https://github.com/rp-176/agenda#readme",
+  "dependencies": {
+    "calendarize": "^1.1.1"
+  }
 }
