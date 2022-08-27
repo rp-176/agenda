@@ -51,11 +51,9 @@ function populateElement(date){
     }
 }
 
-let setMonthTitle = (month) => monthTitle.innerText = listOfMonths[month];
+let setMonthTitle = (month) => document.getElementById("mtext-cont").innerText = listOfMonths[month].toUpperCase;
 
  
 populateElement(currentDate);
-setMonthTitle(currentMonth);
-// console.log(currentDate);
-// console.log(currentMonth);
-// console.log(currentYear);
+// setMonthTitle(currentMonth);
+

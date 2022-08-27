@@ -16,16 +16,12 @@ body{
     height: 58%;
 }
 
-
 .month {
-    align-self: center;
-	width: 90%;
+	width: 100%;
 	background: #fff;
 	position: relative;
 	overflow: hidden;
 	float: left;
-	/* margin: 20px; */
-	min-height: 575px;
     border-radius: 10px;
 }
 
@@ -35,7 +31,6 @@ body{
 	float: left;
 	text-align: center;
 	margin-right: 1.5%;
-    border-radius: 45px;
 }
 
 .dow {
@@ -65,6 +60,7 @@ body{
 	margin-bottom: 1.5%;
 	background: #fff;
     line-height: 90px;
+	border-radius: 50%;
 }
 
 .dummy-day {
