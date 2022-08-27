@@ -1,6 +1,13 @@
-let currentDate = new Date();
-const calendarElement = document.getElementById("calendar");
+let currentMonth, currentYear;
+var listOfMonths= ["January","February","March","April","May","June","July",
+            "August","September","October","November","December"];
 
+
+let currentDate = new Date();
+currentMonth = currentDate.getMonth();
+currentYear = currentDate.getFullYear();
+const calendarElement = document.getElementById("calendar");
+const monthTitle = document.getElementById("month-title");
 
 function calendarize(target, offset) {
 	var i=0, j=0, week, out=[], date = new Date(target || new Date);
@@ -32,7 +39,9 @@ function populateElement(date){
             dayElement.innerText = month[i][j];
             dayElement.classList.add("day");
             if(month[i][j] == 0){
+                dayElement.className = '';
                 dayElement.classList.add("dummy-day");
+                dayElement.innerText = null;
             }
             if(j == 0 | j ==6){
                 dayElement.classList.add("weekend");
@@ -42,6 +51,11 @@ function populateElement(date){
     }
 }
 
-populateElement("Aug 16 2022");
-console.log("HELLO");
+let setMonthTitle = (month) => monthTitle.innerText = listOfMonths[month];
 
+ 
+populateElement(currentDate);
+setMonthTitle(currentMonth);
+// console.log(currentDate);
+// console.log(currentMonth);
+// console.log(currentYear);
