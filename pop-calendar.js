@@ -49,6 +49,7 @@ function populateElement(date){
     for (let i = 0; i < month.length; i++) { //calendarize returns a 2d array of (day of week) x (number of weeks)
         for (let j = 0; j < 7; j++) {
             let dayElement = document.createElement("div");
+            let dateTitle = document.getElementById("date-title");
             dayElement.innerText = month[i][j]; //adds date to created div
             dayElement.classList.add("day"); 
             if(month[i][j] == 0){ //if date is 0 meaning it is from previous month
@@ -59,6 +60,9 @@ function populateElement(date){
             if(j == 0 | j ==6){
                 dayElement.classList.add("weekend");
             }
+            dayElement.addEventListener("click", () =>{
+                dateTitle.innerText = listOfMonths[currentMonth] + " " + dayElement.innerText;
+            });
             calendarElement.appendChild(dayElement);
         }
     }
@@ -98,6 +102,8 @@ let nextMonth = function(id){
         }
     });
 }
+
+
 
 //init
 populateElement(currentDate);
